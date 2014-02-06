@@ -29,13 +29,13 @@
                   <h3>Channel & Volume Control</h3>
 
                   <div class="button-bar">
-                      <ul class="button-group radius-round tiny">
-                            <li><a href="#" class="small button">CHAN +</a></li>
-                            <li><a href="#" class="small button">CHAN -</a></li>
+                      <ul class="button-group">
+                            <li><a href="#" class="small button chan">CHAN +</a></li>
+                            <li><a href="#" class="small button chan">VOL +</a></li>
                       </ul>
                           <ul class="button-group">
-                            <li><a href="#" class="small button">VOL +</a></li>
-                            <li><a href="#" class="small button">VOL -</a></li>
+                            <li><a href="#" class="small button chan">CHAN -</a></li>
+                            <li><a href="#" class="small button chan">VOL -</a></li>
                           </ul>
                     </div>
                   </div>
@@ -47,9 +47,11 @@
                 
                 <div id="record">
                  <h3>Record</h3>
-                   <div class="record">
-                     <ul class="button-group radius-round tiny">
-                          <li ><a href="#" class="record-button">Record</a></li>
+                   <div>
+                     <ul class="record">
+                           <a class="th record" href="#">
+                              <img src="img/record.png">
+                           </a> 
                         
                      </ul>
                   </div>  
@@ -64,9 +66,16 @@
 
                <div class="button-bar">
                  <ul class="button-group radius round">
-                      <li><a data-orbit-link="headline-1" class="small button"><<</a></li>
-                      <li><a data-orbit-link="headline-2" class="small button">Play/Pause</a></li>
-                      <li><a data-orbit-link="headline-3" class="small button"> >> </a></li>
+                      <li><a data-orbit-link="headline-1" class="small button playback"> <<</a> </li>
+                      <li><a data-orbit-link="headline-2" class="small button playback">Play</a></li>
+                      <li><a data-orbit-link="headline-3" class="small button playback"> >> </a></li>
+                </ul>
+                <ul class="button-group radius round">
+                      <li><a data-orbit-link="headline-2" class="small button playback">|<</a></li>
+                      <li><a data-orbit-link="headline-2" class="small button playback">>|</a></li>
+                </ul>
+                 <ul class="button-group radius round">
+                      <li><a data-orbit-link="headline-2" class="small button playback">Stop</a></li>
                 </ul>
             </div>
                 </div>
@@ -79,10 +88,10 @@
                        
 
                <div class="button-bar">
-                 <ul class="button-group radius round">
-                      <li><a data-orbit-link="headline-1" class="small button">Johnny</a></li>
-                      <li><a data-orbit-link="headline-2" class="small button">Tanya</a></li>
-                      <li><a data-orbit-link="headline-3" class="small button">Shawn</a></li>
+                 <ul class="user-list">
+                      <li><a data-orbit-link="headline-1">Johnny</a></li>
+                      <li><a data-orbit-link="headline-2">Tanya</a></li>
+                      <li><a data-orbit-link="headline-3">Shawn</a></li>
                 </ul>
             </div>
                 </div>
@@ -97,7 +106,8 @@
                <div class="button-bar">
                  <a class="th" href="#">
                   <img src="img/Castle.png">
-                 </a> <a class="th" href="#">
+                 </a> 
+                 <a class="th" href="#">
                   <img src="img/sherlock.png">
                  </a>
                   <a class="th" href="#">
