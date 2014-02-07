@@ -42,20 +42,53 @@
                 </div>
               </li>
               <li data-orbit-slide="headline-2">
-             
               <div class="empty large-12 columns"></div>
+                  <div id="navigation">
+                  <h3>Navigation Controls</h3>
+                  </div>
+                  <table>
+              <thead>
+                <tr>
+                  <th width="150"></th>
+                  <th width="150"></th>
+                  <th width="150"></th>
                 
-                <div id="record">
-                 <h3>Record</h3>
-                   <div>
-                     <ul class="record">
-                           <a class="th record" href="#">
-                              <img src="img/record.png">
-                           </a> 
-                        
-                     </ul>
-                  </div>  
-                </div>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td>  
+                   <ul class="button-group radius round">
+                   <li><a data-orbit-link="headline-2" class="small button nav">^</a></li>
+                   </ul>
+                 </td>
+                  <td></td>
+                  
+                </tr>
+                <tr>
+                  <td><ul class="button-group radius round">
+                   <li><a data-orbit-link="headline-2" class="small button nav"><</a></li>
+                 </ul></td>
+                  <td> <ul class="button-group radius round">
+                   <li><a data-orbit-link="headline-2" class="small button nav">Enter</a></li>
+                 </ul></td>
+                  <td><ul class="button-group radius round">
+                   <li><a data-orbit-link="headline-2" class="small button nav">></a></li>
+                 </ul></td>
+                  
+                </tr>
+                <tr>
+                  <td></td>
+                  <td> <ul class="button-group radius round">
+                   <li><a data-orbit-link="headline-2" class="small button nav">v</a></li>
+                 </ul></td>
+                  <td></td>
+                  
+                </tr>
+              </tbody>
+            </table>
+                
               </li>
               <li data-orbit-slide="headline-3">
               <div class="empty large-12 columns"></div>
@@ -77,6 +110,13 @@
                  <ul class="button-group radius round">
                       <li><a data-orbit-link="headline-2" class="small button playback">Stop</a></li>
                 </ul>
+                  <div>
+                     <ul class="record">
+                           <a class="th record" href="#">
+                              <img src="img/record.png">
+                           </a>    
+                     </ul>
+                  </div>  
             </div>
                 </div>
               </li>
@@ -89,9 +129,15 @@
 
                <div class="button-bar">
                  <ul class="user-list">
-                      <li><a data-orbit-link="headline-1">Johnny</a></li>
-                      <li><a data-orbit-link="headline-2">Tanya</a></li>
-                      <li><a data-orbit-link="headline-3">Shawn</a></li>
+                       <ul class="button-group radius round">
+                      <li><a data-orbit-link="headline-2" class="small button playback">User 1</a></li></ul>
+                       <ul class="button-group radius round">
+                      <li><a data-orbit-link="headline-2" class="small button playback">User 2</a></li></ul>
+                        <ul class="button-group radius round">
+                      <li><a data-orbit-link="headline-2" class="small button playback">User 3</a></li></ul>
+                        <ul class="button-group radius round">
+                      <li><a data-orbit-link="headline-2" class="small button playback">User 4</a></li></ul>
+                      
                 </ul>
             </div>
                 </div>
@@ -130,7 +176,7 @@
                         <li><a data-orbit-link="headline-1">
                       Chan/Vol</a></li>
                         <li><a data-orbit-link="headline-2">
-                      Record</a></li>
+                      Nav</a></li>
                         <li><a data-orbit-link="headline-3">
                       Playback</a></li>
                       <li><a data-orbit-link="headline-4">
@@ -150,7 +196,14 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script>
-      $(document).foundation();
+         $(document).foundation({
+        orbit : {
+          bullets: false,
+         
+          timer_speed:100000000,
+
+        }
+      });
     </script>
   </body>
 </html>
